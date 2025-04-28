@@ -63,7 +63,7 @@ def streamlit_app():
         
         # Fetch data from MongoDB
         # we will use local data so we can host the streamlit application
-        data = pd.read_csv(r"C:\Users\Lenovo\Desktop\codes\FCDS\Level-2\Sem-2\DS-Tool\DS-Tools-Project\Data\data.csv")
+        data = pd.read_csv(r"Data/data.csv")
         
         df_mongo = data
         st.dataframe(df_mongo.head(num)) 
